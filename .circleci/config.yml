@@ -3,7 +3,9 @@ jobs:
   build:
     docker:
       - image: circleci/python:3.6.2-stretch-browsers
+    working directory:
     steps:
+      - checkout
       - run:
           name: Install Python deps in a venv
           command: |
