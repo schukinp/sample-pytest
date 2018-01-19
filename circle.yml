@@ -6,4 +6,4 @@ dependencies:
     - pip install -r requirements.txt
 test:
   post:
-    - pytest --tb=line tests.py
+    - pytest --tb=line test.py
