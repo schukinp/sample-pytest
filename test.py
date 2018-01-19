@@ -7,7 +7,7 @@ def test_google(app):
 
 def test_yandex(app):
     app.help.open_yandex()
-    assert browser.driver().current_url.endswith('yandex.ru/'), 'Current URL ends with another name'
+    assert browser.driver().current_url.endswith('yandex.ru'), 'Current URL ends with another name'
 
 
 def test_rbc(app):
